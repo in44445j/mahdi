@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mahdi Therapy</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<div class="logo">Mahdi<span>Therapy</span></div>
+<ul class="navlinks">
+<li><a data-i18n="nav_home" href="#hero"></a></li>
+<li><a data-i18n="nav_about" href="#about"></a></li>
+<li><a data-i18n="nav_services" href="#services"></a></li>
+<li><a data-i18n="nav_gallery" href="#gallery"></a></li>
+<li><a data-i18n="nav_booking" href="#booking"></a></li>
+<li><a data-i18n="nav_contact" href="#contact"></a></li>
+</ul>
+<div class="actions">
+<div class="lang-switch">
+<button data-lang="ar">AR</button>
+<button data-lang="fr">FR</button>
+<button data-lang="en">EN</button>
+</div>
+<button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+<button id="burger"><i class="fa-solid fa-bars"></i></button>
+</div>
+</nav>
+
+<header id="hero">
+<div class="hero-shape"></div>
+<div class="hero-content" data-aos="zoom-out">
+<h1 data-i18n="hero_title"></h1>
+<p data-i18n="hero_subtitle"></p>
+<a href="#booking" class="btn pulse" data-i18n="contact_btn"></a>
+</div>
+</header>
+
+<section id="about">
+<h2 data-i18n="about_title"></h2>
+<div class="about-grid">
+<img src="img/7am9.jpg" alt="Mahdi speaking" width="600" height="800" data-aos="fade-left">
+<p data-i18n="about_content" data-aos="fade-right"></p>
+</div>
+</section>
+
+<section id="services">
+<h2 data-i18n="services_title"></h2>
+<div class="cards">
+<div class="card" data-aos="flip-left"><i class="fa-solid fa-brain"></i><h3 data-i18n="service1"></h3></div>
+<div class="card" data-aos="flip-left" data-aos-delay="100"><i class="fa-solid fa-hand-sparkles"></i><h3 data-i18n="service2"></h3></div>
+<div class="card" data-aos="flip-left" data-aos-delay="200"><i class="fa-solid fa-bolt"></i><h3 data-i18n="service3"></h3></div>
+<div class="card" data-aos="flip-left" data-aos-delay="300"><i class="fa-solid fa-dumbbell"></i><h3 data-i18n="service4"></h3></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2 data-i18n="gallery_title"></h2>
+<div class="gallery-grid">
+<img src="img/mahdi.jpg" alt="Mahdi workshop" width="600" height="800">
+<img src="img/mahdiixar7e.jpg" alt="Mahdi on horse" width="800" height="900">
+<img src="img/mahdijomhore.jpg" alt="Mahdi graduation" width="506" height="680">
+</div>
+</section>
+
+<section id="booking">
+<h2 data-i18n="booking_title"></h2>
+<form id="bookForm" action="https://formspree.io/f/mnqegjvy" method="POST">
+<div class="form-grid">
+<input type="text" name="name" required data-i18n-placeholder="name_label">
+<input type="email" name="email" required data-i18n-placeholder="email_label">
+<input type="tel" name="phone" required data-i18n-placeholder="phone_label">
+<textarea name="message" rows="5" data-i18n-placeholder="message_label"></textarea>
+<button type="submit" class="btn" data-i18n="submit_btn"></button>
+</div>
+</form>
+</section>
+
+<section id="contact">
+<h2 data-i18n="contact_title"></h2>
+<div class="contact-info">
+<p><i class="fa-solid fa-phone"></i><span data-i18n="phone_label_text"></span>: <a href="tel:+212664110332">+212 664 110 332</a></p>
+<p><i class="fa-brands fa-instagram"></i><a href="https://instagram.com/mahditherapyy">Instagram</a></p>
+<p><i class="fa-brands fa-facebook"></i><a href="https://facebook.com/">Facebook</a></p>
+<p><i class="fa-brands fa-youtube"></i><a href="https://youtube.com/">YouTube</a></p>
+</div>
+</section>
+
+<footer>
+<div class="social">
+<a href="https://instagram.com/mahditherapyy"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+</div>
+<p>&copy; <span id="year"></span> Mahdi Therapy</p>
+</footer>
+
+<a href="https://wa.me/212664110332" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<div class="modal"><span class="close">&times;</span><img class="modal-content"><div class="caption"></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
